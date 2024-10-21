@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+    <title>Formulario de registro</title>
+</head>
+<body>
+
+<h2>Formulario de Ejemplo</h2>
+<form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <div class="form-group">
+        <label>Género:</label><br>
+        <input type="radio" id="genero1" name="genero" value="Masculino" required>
+        <label for="genero1">Masculino</label><br>
+        <input type="radio" id="genero2" name="genero" value="Femenino" required>
+        <label for="genero2">Femenino</label><br>
+        <input type="radio" id="genero3" name="genero" value="Otro" required>
+        <label for="genero3">Otro</label><br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="pais">Selecciona tu país:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="" disabled selected>Selecciona un país</option>
+            <option value="España">España</option>
+            <option value="México">México</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+        </select><br><br>
+    </div>
+
+    <label for="Hobbies">Hobbies:</label><br>
+    <input type="Hobbies" id="hobbies" name="hobbies" required><br><br>
+
+    <div class="form-group">
+        <label>Asignaturas:</label><br>
+        <input type="checkbox" id="asignatura1" name="asignaturas" value="Lengua">
+        <label for="interes1">Deportes</label><br>
+        <input type="checkbox" id="asignatura2" name="asignaturas" value="Matemáticas">
+        <label for="interes2">Tecnología</label><br>
+        <input type="checkbox" id="asignatura3" name="asignaturas" value="Tecnología">
+        <label for="interes3">Arte</label><br>
+    </div>
+
+    <div class="form-group">
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios:"></textarea><br><br>
+    </div>
+
+    </form action="mailto:alsastre@redestb.es" method="post" enctype="multipart/form-data">
+        <p>Fichero a enviar: <input type="file" name="fichero"></p>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    <div class="Grupo-de-botones">
+        <button type="Enviar">Enviar formulario</button>
+        <button type="Restablecer">Restablecer</button>
+    </div>
+</form>
+
+</body>
+</html>
